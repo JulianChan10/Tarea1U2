@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="movil.css">
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css'>
+    
+
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="contenedorcabecera ancho margen">
+            <figure class="logo">
+                <img src="imagenes/logo_arriba.png" alt="ORGANICA - The Agriculture Farm">
+            </figure>
+            <nav class="contenedor_menu" id="contenedor_menu">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Nuestros Productos</a></li>
+                    <li><a href="#">Contactanos</a></li>
+                </ul>
+                <!-- al href siempre se le pone el gato para que se despliegue -->
+                <a href="#" class="icono_menu" id="icono_movil">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+            </nav>
+        </div>
+    </header>
+<!-- -------------------------------------------------------------------------------------------- -->
+    <section class="slide">
+        <div class="contenedorslide ancho margen">
+            <figure>
+                <img src="imagenes/foto_slide.jpg" alt="Campo de cultivo orgánico">
+                <div class="textoslide">
+                    <h1>
+                        Cultivamos verduras <span class="highlight">orgánicas</span>
+                        <br>y las traemos a <span class="highlight">tu mesa</span>
+                    </h1>
+                </div>
+            </figure>
+        </div>
+    </section>
+    <!-- ------------------------------------------------------------------------- -->
+    <section class="contenedorservicios ancho">
+        <div class="encabezado">
+            <h2>Nuestros Servicios</h2>
+            <h3>Lo que ofrecemos</h3>
+        </div>
+        
+        <div class="servicios">
+            <article>
+                <figure>
+                    <img src="imagenes/icono1.png" alt="Ganado Vacuno">
+                    <div class="informacion_servicio">
+                        <h2>Ganado Vacuno</h2>
+                        <p>Carne de res producida sin ingeniería genética, uso de radiación ionizante o lodos de depuradora.</p>
+                    </div>
+                </figure>
+            </article>
+    
+            <article>
+                <figure>
+                    <img src="imagenes/icono2.png" alt="Productos Lácteos">
+                    <div class="informacion_servicio">
+                        <h2>Productos Lácteos</h2>
+                        <p>Los productos lácteos como la leche, el queso y el yogur contienen los nutrientes que su cuerpo necesita.</p>
+                    </div>
+                </figure>
+            </article>
+    
+            <article>
+                <figure>
+                    <img src="imagenes/icono3.png" alt="Frutas de la Huerta">
+                    <div class="informacion_servicio">
+                        <h2>Frutas de la Huerta</h2>
+                        <p>Cubre todo lo que necesita saber para cultivar y comercializar con éxito sus propias frutas orgánicas de huerta.</p>
+                    </div>
+                </figure>
+            </article>
+        </div>
+    </section>
+<!-- ----------------------------------------------------------------------------------------- -->
+    <footer>
+        <div class="logopie ancho margen">
+            <figure>
+                <img src="imagenes/logo_abajo.png" alt="">
+            </figure>
+        </div>
+    </footer>
+        <!-------------------------------- Script para el menú desplegable ------------------------------------------------>
+    <script>
+        $("#icono_movil").click(function(){
+            $("#contenedor_menu ul").slideToggle();
+            return false; // Prevenir el comportamiento predeterminado del enlace
+        });
+    </script>
+</body>
+</html>
