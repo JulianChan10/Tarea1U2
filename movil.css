@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
     /* HEADER Y MENÚ MÓVIL */
     .contenedorcabecera {
     padding: 10px 15px;
@@ -83,7 +83,7 @@
 }
 }
 
-@media screen and (max-width: 480px) {
+@media (max-width: 480px) {
     .contenedorcabecera {
     justify-content: space-between;
     }
